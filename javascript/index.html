@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>JavaScript an Objects</h2>
+
+    <p id="demo"></p>
+
+    <img id="bulb" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="changeBulbStatus()">Switch</button>
+
+    <script>
+       function changeBulbStatus(){
+let img_path = "https://www.w3schools.com/js/"
+if(document.getElementById("bulb").src==img_path+'pic_bulboff.gif'){
+document.getElementById("bulb").src=img_path+'pic_bulbon.gif';
+}else{
+document.getElementById("bulb").src=img_path+'pic_bulboff.gif';
+}
+}
+
+const cars = {
+    type: "Fiat",
+    model: "500",
+    color: "white"
+};
+
+document.getElementById("demo").innerHTML = "car color is " + cars.color + " " + cars.model + " " + cars.type;  
+
+ const person ={
+    firstName:"Fatiha",
+    lastName:"Nishi",
+    age:21,
+    fullName:function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+</script>
+    
+</body>
+</html>
